@@ -1,15 +1,17 @@
 Frp-Server
 ===========
-##作为frp的搬运工，我只是提供了一键安装脚本，至于使用的原理啊、功能啊、bug啊请各位移步到frp项目，我真的无能为力。
 
+frp服务端(frps)的一键安装脚本
 
-##感谢[fatedier/frp](https://github.com/fatedier/frp)提供这么优秀的软件
-frp 是一个高性能的反向代理应用，可以帮助您轻松地进行内网穿透，对外网提供服务，支持 tcp, http, https 等协议类型，并且 web 服务支持根据域名进行路由转发。
+因原脚本不能安装新版本，特意fork了脚本源码，修改安装脚本为指定frps版本(0.25.3).
 
-脚本是业余爱好，英文属于文盲，写的不好，欢迎您批评指正。
+与本人恩山帖子配套，欢迎下载使用。
 
-安装平台：CentOS、Debian、Ubuntu。
+《远程控制新三OpenWRT路由器之——Frp(0.25.3)(内网穿透)》
 
+https://www.right.com.cn/forum/thread-537917-1-1.html
+
+脚本适用平台：CentOS、Debian、Ubuntu。
 
 Server
 ------
@@ -17,7 +19,8 @@ Server
 ### Install
 
 ```Bash
-wget --no-check-certificate https://raw.githubusercontent.com/clangcn/onekey-install-shell/master/frps/install-frps.sh -O ./install-frps.sh
+git clone https://github.com/maxlicheng/onekey-install-shell.git
+./install-frps.sh
 chmod 700 ./install-frps.sh
 ./install-frps.sh install
 ```
