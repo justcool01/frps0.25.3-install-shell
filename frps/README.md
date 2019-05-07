@@ -20,7 +20,6 @@ Server
 
 ```Bash
 git clone https://github.com/maxlicheng/onekey-install-shell.git
-./install-frps.sh
 chmod 700 ./install-frps.sh
 ./install-frps.sh install
 ```
