@@ -207,8 +207,10 @@ fun_getServer(){
 }
 fun_getVer(){
     echo -e "Loading network version for ${program_name}, please wait..."
+    FRPS_VER=0.25.3
     program_latest_filename="frp_${FRPS_VER}_linux_${ARCHS}.tar.gz"
-    program_latest_file_url="${program_download_url}/v${FRPS_VER}/${program_latest_filename}"
+    #program_latest_file_url="${program_download_url}/v${FRPS_VER}/${program_latest_filename}"
+    program_latest_file_url="https://github.com/fatedier/frp/releases/download/v0.25.3/frp_0.25.3_linux_amd64.tar.gz"
     if [ -z "${program_latest_filename}" ]; then
         echo -e "${COLOR_RED}Load network version failed!!!${COLOR_END}"
     else
