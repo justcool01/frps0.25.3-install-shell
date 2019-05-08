@@ -19,10 +19,10 @@ Server
 ### Install
 
 ```Bash
-git clone https://github.com/maxlicheng/onekey-install-shell.git
-cd frps
-chmod 700 ./install-frps.sh
-./install-frps.sh install
+    git clone https://github.com/maxlicheng/frps0.25.3-install-shell.git
+    cd frps
+    chmod 700 ./install-frps.sh
+    ./install-frps.sh install
 ```
 
 ### UnInstall
