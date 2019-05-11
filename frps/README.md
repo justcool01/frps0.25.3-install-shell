@@ -21,17 +21,17 @@ Server
 ```Bash
     git clone https://github.com/maxlicheng/frps0.25.3-install-shell.git
     cd frps
-    chmod 700 ./install-frps.sh
-    ./install-frps.sh install
+    sudo chmod 700 ./install-frps.sh
+    sudo ./install-frps.sh install
 ```
 
 ### UnInstall
 ```Bash
-    ./install-frps.sh uninstall
+    sudo ./install-frps.sh uninstall
 ```
 ### Update
 ```Bash
-    ./install-frps.sh update
+    sudo ./install-frps.sh update
 ```
 ### 服务器管理
 ```Bash
