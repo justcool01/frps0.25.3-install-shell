@@ -20,6 +20,7 @@ Server
 
 ```Bash
     git clone https://github.com/maxlicheng/frps0.25.3-install-shell.git
+    cd frps0.25.3-install-shell
     cd frps
     sudo chmod 700 ./install-frps.sh
     sudo ./install-frps.sh install
