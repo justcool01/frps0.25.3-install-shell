@@ -1,5 +1,7 @@
-frp服务端(frps)的一键安装脚本
+Frp-Server
 ===========
+
+frp服务端(frps)的一键安装脚本
 
 因原脚本不能安装新版本，特意fork了脚本源码，修改安装脚本为指定frps版本(0.25.3).
 
@@ -11,4 +13,29 @@ https://www.right.com.cn/forum/thread-537917-1-1.html
 
 脚本适用平台：CentOS、Debian、Ubuntu。
 
-如需帮助请看相关README文件
+Server
+------
+
+### Install
+
+```Bash
+    git clone https://github.com/maxlicheng/frps0.25.3-install-shell.git
+    cd frps0.25.3-install-shell
+    cd frps
+    sudo chmod 700 ./install-frps.sh
+    sudo ./install-frps.sh install
+```
+
+### UnInstall
+```Bash
+    sudo ./install-frps.sh uninstall
+```
+### Update
+```Bash
+    sudo ./install-frps.sh update
+```
+### 服务器管理
+```Bash
+    Usage: /etc/init.d/frps {start|stop|restart|status|config|version}
+```
+
